@@ -57,7 +57,26 @@ footer{
     background-color: rgba(1,1,1,0.1);
 }
 /*Styles for main part of the page*/
-.text{
+form{
+    display: flex;
+}
+form  div{
+    flex:1;
+}
+.btn-send-form{
+    padding-top: 10px;
+}
+#btn-create{
+    background: #596D48;
+    border-radius: 4px;
+    border:1px;
+    min-width: 170px;
+    height: 30px;
+    color: white;
+    font-size: large;
+}
+#btn-create:hover{
+    background:blue;
 }
 .main{
     flex:1;
