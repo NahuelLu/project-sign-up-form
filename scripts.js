@@ -9,7 +9,11 @@ function confirmPassword(event){
     let userPassword = userPass.value;
     let userPasswordConfirm = userPassConfirm.value;
     if(userPassword !== userPasswordConfirm){
-        errorMsg.textContent="*Password don't match";
+        showError();
         event.preventDefault();
     }
+}
+function showError(){
+    errorMsg.textContent="*Password don't match";
+    errorMsg.className+=" errorStyle";
 }
