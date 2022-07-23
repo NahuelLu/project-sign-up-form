@@ -19,34 +19,54 @@ footer{
     text-align: center;
     position: relative;
     background-color: rgba(1,1,1,0.1);
+    min-width: 400px;
 }
 #img{
     position: relative;
-    width: 400px;
-    flex:1 0 auto; /*Remember that shrink with 0 is doesn´t allow shrink to container*/
+    flex: 1 0 auto; /*Remember that shrink with 0 is doesn´t allow shrink to container*/
 }
 #main{
-    width: 300px;
     flex: 1 1 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 30px;
 }
-
-/*Other styles*/
-#img_penguin{
+#img, #main{
+    width: 400px;
+}
+/*left-part styles*/
+#odin-img{
+    display: flex;
+    position: absolute;
+    background-color: rgba(1,1,1,0.5);
+    width: 100%;
+    top:30px;
+    justify-content:center;
+    align-items: center;
+}
+#penguin-img{
     max-width: 100%;
 }
 #odin-icon{
     height: 150px;
 }
-
-.underline{
-    text-decoration: underline;
+#credit-img{
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    text-align: center;
 }
-#user-password:focus-visible{
-    background-color: blue;
+
+
+/*Other styles*/
+
+form input:focus{
+    box-shadow: 1px 1px blue;
+    border: 1px solid blue;
+}
+#user-password:invalid:required{
+    background-image: linear-gradient(to right, pink, lightgreen);
 }
 #paragraph{
     color: white;
@@ -57,24 +77,10 @@ footer{
     font-family: cool-font;
     src: url(/fonts/Norse-Bold.otf);
 }
-#credit-img{
-    position: absolute;
-    width: 100%;
-    bottom: 10px;
-    text-align: center;
-}
-#odin-image{
-    display: flex;
-    position: absolute;
-    background-color: rgba(1,1,1,0.5);
-    width: 100%;
-    top:30px;
-    justify-content:center;
-    align-items: center;
-}
 /*Styles for main part of the page*/
 form{
     display: flex;
+    box-shadow: 0px 5px 10px rgb(168 168 168 / 50%);
 }
 form  div{
     flex:1;
@@ -91,9 +97,20 @@ form  div{
     color: white;
     font-size: large;
 }
+a{
+    color: black;
+}
+a:hover{
+    color: blue;
+}
 #btn-create:hover{
     background:blue;
 }
 label{
     display: block;
 }
+/*Error Styles*/
+.error{
+    display: block;
+}
+

@@ -15,12 +15,12 @@
 <body>
     <main>
         <div id="img">
-            <img src="img/baby-penguin.jpg" alt="baby-penguin" id="img_penguin">
-            <div id="odin-image">
+            <img src="img/baby-penguin.jpg" alt="baby-penguin" id="penguin-img">
+            <div id="odin-img">
                 <img src="img/odin.png" alt="odin-icon" id="odin-icon">
                 <p id="paragraph">ODIN PROJECT</p>
             </div>
-            <div id="credit-img">Photo by <span class="underline">Drew Hailes</span> on <span class="underline">Everywherewild</span></div>
+            <div id="credit-img">Photo by <a href="https://everywherewild.com/author/drewhaines/">Drew Hailes</a> on <span class="underline">Everywherewild</span></div>
         </div>
         <div id="main">
             <div class="text">
@@ -34,20 +34,21 @@
                 <p>Let's do this!</p>
                 <form action="" method="post" id="form">
                     <div>
-                    <label for="first-name">FIRST NAME</label>
-                    <input type="text" id="first-name" name="first-name">
-                    <label for="email">EMAIL</label>
-                    <input type="email" name="email" id="email">
-                    <label for="user-password">PASSWORD</label>
-                    <input type="password" name="password" id="user-password" >
+                        <label for="first-name" >FIRST NAME</label>
+                        <input type="text" id="first-name" name="first-name" required>
+                        <label for="email">EMAIL</label>
+                        <input type="email" name="email" id="email">
+                        <label for="user-password" >PASSWORD</label>
+                        <input type="password" name="password" id="user-password"required>
+                        <span class="error" aria-live="polite"></span>
                     </div>
                     <div>
-                    <label for="last-name">LAST NAME</label>
-                    <input type="text" name="last-name" id="last-name">
-                    <label for="number">PHONE NUMBER</label>
-                    <input type="tel" name="number" id="number">
-                    <label for="user-password-confirm">CONFIRM PASSWORD</label>
-                    <input type="password" name="confirm-password" id="user-password-confirm" >
+                        <label for="last-name">LAST NAME</label>
+                        <input type="text" name="last-name" id="last-name">
+                        <label for="number">PHONE NUMBER</label>
+                        <input type="tel" name="number" id="number">
+                        <label for="user-password-confirm">CONFIRM PASSWORD</label>
+                        <input type="password" name="confirm-password" id="user-password-confirm" >
                     </div>
                 </form>
             </div>
@@ -57,6 +58,6 @@
             </div>
         </div>
     </main>
-    <footer>Made it by <span class="underline">Wondermyoui</span></footer>
+    <footer>Made it by <a href="https://github.com/NahuelLu">Wondermyoui</a></footer>
 </body>
 </html>
